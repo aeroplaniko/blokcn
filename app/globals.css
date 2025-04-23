@@ -5,27 +5,29 @@
 @custom-variant dark (&:is(.dark *));
 
 @import "./themes.css";
+@import "./colors.css";
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  /* Chakra semantic token mappings (light mode) */
+  --background: var(--color-white); /* chakra-body-bg: white */
+  --foreground: var(--color-blackalpha-900); /* chakra-body-text: blackAlpha.900 */
+  --card: var(--color-white); /* chakra-card-bg: white */
+  --card-foreground: var(--color-blackalpha-900); /* chakra-card-text: blackAlpha.900 */
+  --popover: var(--color-white); /* chakra-popover-bg: white */
+  --popover-foreground: var(--color-blackalpha-900); /* chakra-popover-text: blackAlpha.900 */
+  --primary: var(--color-primary-600); /* primary-fg: primary.600 */
+  --primary-foreground: var(--color-white); /* chakra-inverse-text: white */
+  --secondary: var(--color-gray-50);
+  --secondary-foreground: var(--color-blackalpha-900);
+  --muted: var(--color-gray-50); /* chakra-subtle-bg: gray.50 */
+  --muted-foreground: var(--color-blackalpha-500); /* chakra-subtle-text: blackAlpha.500 */
+  --accent: var(--color-gray-50);
+  --accent-foreground: var(--color-blackalpha-900);
+  --destructive: var(--color-danger-600); /* danger-fg: danger.600 */
+  --border: var(--color-blackalpha-200); /* chakra-border-color: blackAlpha.200 */
+  --input: var(--color-blackalpha-400); /* chakra-placeholder-color: blackAlpha.400 */
+  --ring: #6987F9;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -42,22 +44,25 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.269 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.371 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
+  /* Chakra semantic token mappings (dark mode) */
+  --background: var(--color-gray-800); /* chakra-body-bg: gray.800 */
+  --foreground: var(--color-white); /* chakra-body-text: white */
+  --card: var(--color-gray-800); /* chakra-card-bg: gray.800 */
+  --card-foreground: var(--color-white); /* chakra-card-text: white */
+  --popover: var(--color-gray-800); /* chakra-popover-bg: gray.800 */
+  --popover-foreground: var(--color-white); /* chakra-popover-text: white */
+  --primary: var(--color-primary-200); /* primary-fg: primary.200 */
+  --primary-foreground: var(--color-blackalpha-900); /* chakra-inverse-text: blackAlpha.900 */
+  --secondary: var(--color-gray-900); /* chakra-subtle-bg: gray.900 */
+  --secondary-foreground: var(--color-white); /* chakra-subtle-text: white */
+  --muted: var(--color-gray-900); /* chakra-subtle-bg: gray.900 */
+  --muted-foreground: var(--color-whitealpha-600); /* chakra-subtle-text: whiteAlpha.600 */
+  --accent: var(--color-gray-900);
+  --accent-foreground: var(--color-white); /* chakra-inverse-text: white */
+  --destructive: var(--color-danger-200); /* danger-fg: danger.200 */
+  --border: var(--color-whitealpha-200); /* chakra-border-color: whiteAlpha.200 */
+  --input: var(--color-whitealpha-500); /* chakra-placeholder-color: whiteAlpha.500 */
+  --ring: #6987F9;
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.488 0.243 264.376);
@@ -86,7 +91,7 @@
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--color-purple-600);
+  --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
