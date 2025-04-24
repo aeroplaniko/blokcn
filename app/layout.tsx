@@ -5,11 +5,11 @@ import { fontVariables } from "@/lib/fonts"
 import { Analytics } from "@/components/analytics"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/registry/new-york-v4/ui/sonner"
-import { siteConfig } from "@/www/config/site"
 
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import { ActiveThemeProvider } from "@/components/active-theme"
+import { siteConfig } from "@/lib/siteconfig"
 
 const META_THEME_COLORS = {
   light: "#ffffff",
